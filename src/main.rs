@@ -1,3 +1,9 @@
+mod divisors;
+mod is_square;
+mod open_or_senior;
+
 fn main() {
-    println!("Hello, world!");
+    // call functions here
 }
+
+
