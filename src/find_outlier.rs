@@ -1,4 +1,4 @@
-pub fn find_outlier(values: &[i32]) -> i32 {
+pub fn run(values: &[i32]) -> i32 {
     let (mut evens, mut odds, mut parity, mut x) = (0, 0, 0, 0);
 
     for i in 0..3 {
