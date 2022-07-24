@@ -2,7 +2,7 @@ fn between(n: i32, left: i32, right: i32) -> bool {
     n >= left && n <= right
 }
 
-fn is_only_nums(n: &str) -> bool {
+fn only_nums(n: &str) -> bool {
     for ch in n.chars() {
         match ch {
             '0'..='9' => continue,
@@ -13,7 +13,7 @@ fn is_only_nums(n: &str) -> bool {
 }
 
 fn is_correct_num(n: &str) -> bool {
-    (n.len() > 1 && n.chars().nth(0) != Some('0') || n.len() == 1) && is_only_nums(n)
+    (n.len() > 1 && n.chars().nth(0) != Some('0') || n.len() == 1) && only_nums(n)
 }
 
 pub fn run(ip: &str) -> bool {
